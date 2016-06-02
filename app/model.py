@@ -46,6 +46,7 @@ class EquipmentRepair(db.Model):
     __tablename__ = 'equipment_repair'
 
     id = db.Column(db.Integer, primary_key=True)
+    equipment_number = db.Column(db.Integer)
     stop_date = db.Column(db.DateTime)
     recovery_date = db.Column(db.DateTime)
     repaire_person = db.Column(db.String(128))

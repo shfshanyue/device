@@ -24,7 +24,7 @@ class ErrorView(ModelView):
 
 class RepairView(ModelView):
     _labels = (u'设备编号', '停机日期', u'恢复日期', u'维修人员', u'批准人', u'维修费用', u'备用设备编号', u'使用材料', u'使用工具', u'备注')
-    _columns = ('stop_date', 'recovery_date', 'repaire_person', 'approved_person', 'maintenance_costs', 'spare_equipment_number', 'use_material', 'tool', 'remarks')
+    _columns = ('equipment_number', 'stop_date', 'recovery_date', 'repaire_person', 'approved_person', 'maintenance_costs', 'spare_equipment_number', 'use_material', 'tool', 'remarks')
     column_labels = dict(zip(_columns, _labels))
 
 class RecordView(ModelView):
